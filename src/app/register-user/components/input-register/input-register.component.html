@@ -1,0 +1,21 @@
+<form #registerForm="ngForm" class="form-signin" (ngSubmit)="registerUser()">
+  <h1 class="h3 mb-3 font-weight-normal">Registro de usuario</h1>
+  <label for="inputFirstName" class="sr-only">Nombre</label>
+  <input type="text" id="inputFirstName" name="firstName" class="form-control" placeholder="Nombre" required autofocus
+         [(ngModel)]="userRegister.firstName">
+  <label for="inputLastName" class="sr-only">Apellidos</label>
+  <input type="text" id="inputLastName" name="lastName" class="form-control" placeholder="Apellidos" required autofocus
+         [(ngModel)]="userRegister.lastName">
+
+  <label for="inputEmail" class="sr-only">Correo electrónico</label>
+  <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Correo" required autofocus
+         [(ngModel)]="userRegister.email">
+  <label for="inputPassword" class="sr-only">Contraseña</label>
+  <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Contraseña" required
+         [(ngModel)]="userRegister.password">
+  <label for="inputPasswordRetry" class="sr-only">Repetir contraseña</label>
+  <input type="password" id="inputPasswordRetry" name="passwordRetry" class="form-control" placeholder="Repetir contraseña" required
+         [(ngModel)]="passwordRetry">
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+</form>

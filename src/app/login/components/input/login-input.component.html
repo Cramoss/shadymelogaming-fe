@@ -1,0 +1,16 @@
+<form #loginForm="ngForm" class="form-signin" (ngSubmit)="login()">
+  <h1 class="h3 mb-3 font-weight-normal">Ingresar a Shady Melo Gaming</h1>
+  <label for="inputEmail" class="sr-only">Correo electrónico</label>
+  <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Correo" required autofocus
+         [(ngModel)]="userLogin.email">
+  <label for="inputPassword" class="sr-only">Contraseña</label>
+  <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Contraseña" required
+         [(ngModel)]="userLogin.password">
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Recordarme
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+</form>
